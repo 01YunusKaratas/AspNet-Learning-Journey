@@ -1,0 +1,35 @@
+﻿@using ASP.NET_Lesson4.Models
+@model Product
+
+@{
+    ViewData["TITLE"] = "VİEWMODEL";
+}
+
+
+<style>
+    thead,tbody,tr,td,table{
+        border:2px solid black;
+        margin:auto;
+        padding:1px;
+
+    }
+
+    
+</style>
+
+
+
+<table>
+    <thead>
+        <tr>
+           <td>NAME</td>
+           <td>ID</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Name</td>
+            <td>@Model.ID</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["TITLE"] = "viewdata data transfer";
+}
+
+
+<p>@ViewData["name"]</p>
+<p>@ViewData["info"]</p>
+
+
+
+
+@{
+    foreach(var item in ViewData["listem"] as List<User>)
+    {
+        <p>@item.name -- @item.surname -- @item.age</p>
+    }
+}
